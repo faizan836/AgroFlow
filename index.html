@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>AgroFlow - AI Farming Assistant</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌱 AgroFlow</h1>
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h2>AI Powered Smart Farming</h2>
+
+<p>Take a photo of your soil and get the best crop recommendation instantly using AI.</p>
+
+<a href="#camera">
+<button class="main-btn">Start Detection 📷</button>
+</a>
+
+</section>
+
+
+<section id="camera" class="camera-section">
+
+<div class="camera-card">
+
+<h2>📷 Soil Detection</h2>
+
+<button onclick="openCamera()" class="action-btn">
+Open Camera
+</button>
+
+<br><br>
+
+<video id="video" width="350" height="250" autoplay></video>
+
+<br>
+
+<button onclick="capturePhoto()" class="action-btn">
+Capture Photo
+</button>
+
+<br><br>
+
+<canvas id="canvas" width="350" height="250"></canvas>
+
+<div class="result">
+
+<h3>AI Result</h3>
+
+<p id="resultText">
+Crop recommendation will appear here
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="features">
+
+<div class="feature">
+
+<h3>🌾 Soil Detection</h3>
+
+<p>AI analyzes your soil type using image recognition.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🌦 Weather Insights</h3>
+
+<p>Real-time weather data to help farmers plan crops.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>📊 Crop Recommendation</h3>
+
+<p>Get AI-based crop suggestions for better yield.</p>
+
+</div>
+
+</section>
+
+<p id="locationText">Location: Detecting...</p>
+<footer>
+
+<p>© 2026 AgroFlow | AI Smart Farming Platform</p>
+
+</footer>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

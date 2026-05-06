@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>AgroFlow Dashboard</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌾 AgroFlow Dashboard</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+</nav>
+
+</header>
+
+
+<div class="dashboard-container">
+
+<div class="card">
+
+<h2>📷 Soil Detection</h2>
+
+<p>Open camera and detect soil type using AI</p>
+
+<button onclick="openCamera()" class="action-btn">
+Open Camera
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌦 Weather Check</h2>
+
+<p>Check live weather conditions for farming</p>
+
+<input id="city" placeholder="Enter City">
+
+<br><br>
+
+<button onclick="checkWeather()" class="action-btn">
+Check Weather
+</button>
+
+<p id="weatherResult"></p>
+
+</div>
+
+
+<div class="card">
+
+<h2>🤖 AI Result</h2>
+
+<p id="resultText">
+AI prediction result will appear here
+</p>
+
+</div>
+
+</div>
+
+
+<div class="back-btn">
+
+<a href="/">
+<button class="main-btn">⬅ Back to Home</button>
+</a>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
